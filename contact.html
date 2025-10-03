@@ -5,22 +5,107 @@
     <title>Dalila</title>
     <link rel="icon" href="images/dalila_img/cut-shaps/heart.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
-    <meta content="Dalila" name="description" >
-    <meta content="" name="keywords" >
-    <meta content="" name="author" >
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Dalila" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
     <!-- CSS Files
     ================================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
-    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
-     <!-- Lightbox2 CSS (upar rakh sakte ho) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" >
-    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- color scheme -->
-    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
-
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+    
+        .contact-info-box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .contact-info-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .contact-icon {
+            font-size: 26px;
+            color: #d4a017;
+            margin-right: 12px;
+        }
+        .map-container {
+            height: 500px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 40px;
+            animation: fadeInMap 1s ease-in-out;
+        }
+        @keyframes fadeInMap {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            padding: 12px;
+            transition: all 0.3s ease;
+            background: linear-gradient(to right, #fff 50%, #f8f9fa 50%) right;
+            background-size: 200%;
+        }
+        .form-control:focus {
+            border-color: #d4a017;
+            box-shadow: 0 0 8px rgba(212, 160, 23, 0.3);
+            transform: translateY(-2px);
+            background-position: left;
+        }
+        .form-control::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+        .btn-main {
+            background: #d4a017;
+            color: #fff;
+            padding: 12px 40px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        .btn-main:hover {
+            background: #b58900;
+        }
+        .decorative-divider {
+            width: 100px;
+            height: 4px;
+            background: #d4a017;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        .contact-heading {
+            font-family: 'Georgia', serif;
+            color: #333;
+            font-weight: bold;
+        }
+        .success, .error {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -32,7 +117,7 @@
         <!-- page preloader close -->
 
         <!-- header begin -->
- <header class="transparent has-topbar logo-center">
+        <header class="transparent has-topbar logo-center">
             <div id="topbar">
                 <div class="container-fluid px-lg-5 px-3">
                     <div class="row">
@@ -51,28 +136,25 @@
                         <div class="de-flex">
                             <div class="col-start">
                                 <ul id="mainmenu">
-                                    <li><a class="menu-item" href="index.html">Home</a>
-                                        
-                                    </li>
                                   <li><a class="menu-item" href="about.html">About Us</a></li>
-                                   <li><a class="menu-item" href="#">Pages</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="diamond-knowledge.html">Diamond Knowledge</a></li>
-                                            <li><a class="menu-item" href="sell-your-diamonds.html">Sell</a></li>
-                                            <li><a class="menu-item" href="#">Inventory</a></li>
-                                        </ul>
-                                    </li>
+
+                                  <li><a class="menu-item" href="sell-your-diamonds.html">We Buy</a></li>
+                                  <li><a class="menu-item" href="diamond-knowledge.html">Diamond Knowledge</a></li>
+                                            
                                      <li><a class="menu-item" href="contact.html">Contact Us</a></li>
                                     
                                 </ul>
                             </div>
                             <div class="col-center">
-                                <a href="index.html"><img src="images/dalila_img/logo2.png" alt="" ></a>
+                                <a href="index.html"><img src="images/dalila_img/DalilaLogo.png" alt="" ></a>
                             </div>
                             <div class="col-end">
-                                <div class="menu_side_area d-flex gap-4">          
+                                <div class="menu_side_area d-flex gap-4">  
+                                                                      <a href="#" class="btn-main btn-line sm-hide">Inventory</a>        
                                     <a href="#" class="btn-main btn-line sm-hide">Login</a>
                                     <a href="#" class="btn-main btn-line sm-hide">Register</a>
+
+
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
@@ -90,10 +172,7 @@
                 <div class="container relative z-index-1000">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 text-center">
-                              <h1
-            class="fs-80 text-white fs-sm-10vw mb-0 lh-1 text-uppercase wow fadeInRight"
-            data-wow-delay="1.2s"
-          >Contact Us</h1>
+                            <h1 class="fs-80 text-white fs-sm-10vw mb-0 lh-1 text-uppercase wow fadeInRight" data-wow-delay="1.2s">Contact Us</h1>
                             <p class="lead mt-3">
                                 Have a question or need assistance with your booking? Our dedicated team is available around the clock to provide you with prompt and friendly service.
                             </p>
@@ -107,141 +186,178 @@
                 <div class="de-overlay"></div>
             </section>
 
-            <section class="relative lines-deco">
+<section>
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <div class="subtitle id-color wow fadeInUp mb-2">Get in Touch</div>
+                <h2 class="wow fadeInUp">Contact Us</h2>
+
+                <div class="spacer-half"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
+                        <div class="relative">
+                            <a href="mailto:support@example.com">
+                                <i class="bg-color text-light p-3 fs-48 mb-4 icofont-email"></i>
+                                <h4>Email Support</h4>
+                            </a>
+                            <p>Reach out to us via email for any inquiries or support. Our team responds within 24 hours.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".4s">
+                        <div class="relative">
+                            <a href="tel:+1234567890">
+                                <i class="bg-color text-light p-3 fs-48 mb-4 icofont-phone"></i>
+                                <h4>Call Us</h4>
+                            </a>
+                            <p>Contact our friendly team by phone for immediate assistance or to book an appointment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="relative">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-6 wow fadeInUp" data-wow-delay=".2s">
+                            <img src="/images/dalila_img/contact-1.webp" class="img-fluid" alt="Contact Image 1">
+                        </div>
+                        <div class="col-6 wow fadeInUp" data-wow-delay=".4s">
+                            <img src="/images/dalila_img/contact-2.webp" class="img-fluid" alt="Contact Image 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="relative lines-deco contact-section">
                 <div class="container">
                     <div class="row g-4 justify-content-center">
-
                         <div class="col-lg-7">
-                            
+                            <div class="text-center">
+                                <h3 class="contact-heading mb-3">Get in Touch</h3>
+                                <div class="decorative-divider"></div>
+                            </div>
                             <form name="contactForm" id="contact_form" class="position-relative z1000" method="post" action="contact.php">
                                 <div id="contact_form_wrap" class="row gx-4">
-                                    <div class="col-lg-12">
-                                        <div class="text-center">
-                                            <h3 class="mb-4">Write a Message</h3>
-                                        </div>
-                                    </div>
-
                                     <div class="col-lg-6 col-md-6 mb10">
                                         <div class="field-set">
                                             <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
                                         </div>
-
                                         <div class="field-set">
                                             <input type="text" name="email" id="email" class="form-control" placeholder="Your Email" required>
                                         </div>
-
                                         <div class="field-set">
                                             <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
                                         </div>
                                     </div>
-                                    
                                     <div class="col-lg-6 col-md-6">
                                         <div class="field-set mb20">
                                             <textarea name="message" id="message" class="form-control" placeholder="Your Message" required></textarea>
                                         </div>
                                     </div>
-
                                     <div class="col-lg-12">
                                         <div class="text-center">
-                                            <input type='submit' id='send_message' value='Send Message' class="btn-main">
+                                            <input type="submit" id="send_message" value="Send Message" class="btn-main">
                                         </div>
                                     </div>
                                 </div>
-                                
-
-                                <div id="success_message" class='success'>
+                                <div id="success_message" class="success">
                                     Your message has been sent successfully. Refresh this page if you want to send more messages.
                                 </div>
-                                <div id="error_message" class='error'>
+                                <div id="error_message" class="error">
                                     Sorry there was an error sending your form.
                                 </div>
                             </form>
-
                         </div>
-                        
+                        <div class="col-lg-5">
+                            <div class="contact-info-box">
+                                <h4 class="contact-heading">Contact Information</h4>
+                                <p><i class="fas fa-map-marker-alt contact-icon"></i> 123 Diamond Street, Jewelry District, XYZ City</p>
+                                <p><i class="fas fa-phone contact-icon"></i> +1 234 567 890</p>
+                                <p><i class="fas fa-envelope contact-icon"></i> contact@dalila.com</p>
+                                <p><i class="fas fa-clock contact-icon"></i> Mon - Fri: 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full-width Map -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627927975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDUwJzEyLjYiUyAxNDTCsDU3JzEzLjUiRQ!5e0!3啦!3m2!1sen!2sau!4v1631234567890!5m2!1sen!2sau" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-            </section>            
-
+              
+            </section>
         </div>
         <!-- content close -->
         <!-- footer begin -->
         <footer class="text-light section-dark pt-5">
-  <div class="container">
-
-    <!-- Subscribe Section -->
-    <div class="row mb-4">
-      <div class="col-md-8 mx-auto text-center">
-        <h3 class="fs-20 mb-3">Subscribe to our Newsletter</h3>
-        <form class="d-flex justify-content-center">
-          <input 
-            type="email" 
-            class="form-control w-50 me-2" 
-            placeholder="Enter your email"
-            required
-          >
-          <button class="btn btn-primary" type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-
-    <hr class="bg-light">
-
-    <!-- Main Footer Content -->
-    <div class="row g-4 align-items-start">
-      
-      <!-- Logo + Social (LHS) -->
-      <div class="col-md-4 text-center text-md-start">
-        <img src="images/dalila_img/logo2.png" class="w-50 mb-3" alt="Logo">
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-      </div>
-
-      <!-- Address, Quick Links, Contact Us (RHS) -->
-      <div class="col-md-8">
-        <div class="row">
-          <!-- Address -->
-          <div class="col-md-4 text-center text-md-start">
-            <h3 class="fs-20">Address</h3>
-            <p>xyz<br>123</p>
-          </div>
-          <!-- Quick Links -->
-          <div class="col-md-4 text-center text-md-start">
-            <h3 class="fs-20">Quick Links</h3>
-            <ul class="list-unstyled">
-              <li><a href="/" class="text-light text-decoration-none">Home</a></li>
-              <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
-              <li><a href="diamond-knowledge.html" class="text-light text-decoration-none">Diamond Knowledge</a></li>
- <li><a href="sell-your-diamonds.html" class="text-light text-decoration-none">Sell</a></li>
-
-              <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-            </ul>
-          </div>
-          <!-- Contact -->
-          <div class="col-md-4 text-center text-md-start">
-            <h3 class="fs-20">Contact Us</h3>
-            <p>T. +123456789<br>M. contact@gmail.com</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Subfooter -->
-  <div class="subfooter mt-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <small>Copyright 2025 - Dalila | All Rights Reserved</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+            <div class="container">
+                <!-- Subscribe Section -->
+                <div class="row mb-4">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h3 class="fs-20 mb-3">Subscribe to our Newsletter</h3>
+                        <form class="d-flex justify-content-center">
+                            <input type="email" class="form-control w-50 me-2" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <hr class="bg-light">
+                <!-- Main Footer Content -->
+                <div class="row g-4 align-items-start">
+                    <!-- Logo + Social (LHS) -->
+                    <div class="col-md-4 text-center text-md-start">
+                        <img src="images/dalila_img/logo2.png" class="w-50 mb-3" alt="Logo">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <!-- Address, Quick Links, Contact Us (RHS) -->
+                    <div class="col-md-8">
+                        <div class="row">
+                            <!-- Address -->
+                            <div class="col-md-4 text-center text-md-start">
+                                <h3 class="fs-20">Address</h3>
+                                <p>123 Diamond Street<br>Jewelry District, XYZ City</p>
+                            </div>
+                            <!-- Quick Links -->
+                            <div class="col-md-4 text-center text-md-start">
+                                <h3 class="fs-20">Quick Links</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="/" class="text-light text-decoration-none">Home</a></li>
+                                    <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                                    <li><a href="diamond-knowledge.html" class="text-light text-decoration-none">Diamond Knowledge</a></li>
+                                    <li><a href="sell-your-diamonds.html" class="text-light text-decoration-none">Sell</a></li>
+                                    <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Contact -->
+                            <div class="col-md-4 text-center text-md-start">
+                                <h3 class="fs-20">Contact Us</h3>
+                                <p>T. +123456789<br>M. contact@dalila.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subfooter -->
+            <div class="subfooter mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <small>Copyright 2025 - Dalila | All Rights Reserved</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- footer close -->
     </div>
     
@@ -250,7 +366,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/validation-contact.js"></script>
-   
+    
 </body>
 
 </html>
