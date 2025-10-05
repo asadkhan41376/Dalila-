@@ -925,7 +925,7 @@ header.smaller #mainmenu>li::before{
 }
 
 #mainmenu >li>a {
-  font-size: 17px;
+  font-size: 15px;
   padding-right: 6px;
   font-weight: var(--mainmenu-font-weight);
 }
@@ -21477,29 +21477,43 @@ border-radius:20px 0 0 20px;
 
 
 /* =====================  */
-.experience{
+.experience {
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .text-parallax {
-  background: no-repeat 0 0;
+  position: relative;
   display: inline-block;
-  background-image: url("/images/dalila_img/dalila_12.png");
+  overflow: hidden;
 }
 
-.text-parallax-content{
+.text-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+.text-parallax-content {
+  position: relative;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 21.8em;
   line-height: 1;
-  overflow: hidden;
   margin-bottom: 0;
+  color: #363636;
+  mix-blend-mode: lighten; /* keeps text visible over video */
+  z-index: 2;
   background: #fff;
-  color:#363636;
-  mix-blend-mode: lighten;
 }
 
-.experience-info{
+.experience-info {
   position: relative;
   top: -0.75em;
   font-size: 1.5625em;
@@ -21507,8 +21521,9 @@ border-radius:20px 0 0 20px;
   letter-spacing: 0.06em;
   display: inline-block;
   text-align: left;
-  margin:0 0 0 0.5em;
+  margin: 0 0 0 0.5em;
 }
+
 
 
 .video_1{
@@ -21597,4 +21612,49 @@ border-radius:20px 0 0 20px;
   .right_image img {
     width: 100%;
   }
+}
+
+
+
+/* Default (Laptop size - around 1366px) */
+.explore-btn {
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 30%;
+}
+
+ .explore-btn2{
+    margin-left: 5%;
+    margin-top: 32%;
+  }
+/* Desktop - Full HD (1920px and above) */
+@media (min-width: 1600px) {
+  .explore-btn {
+    margin-left: -12%;   /* adjust horizontal position */
+    margin-top: 44%;   /* adjust vertical position */
+    transform: scale(1.1); /* optional for better proportion */
+  }
+   .explore-btn2{
+    margin-left: -10%;
+    margin-top: 45%;
+  }
+}
+
+/* Small laptops (1280px and below) */
+@media (max-width: 1280px) {
+  .explore-btn {
+    margin-left: 2%;
+    margin-top: 36%;
+  }
+}
+
+/* Tablets and smaller */
+@media (max-width: 992px) {
+  .explore-btn {
+    position: relative;
+    margin: 20px 0 0 0;
+    display: inline-block;
+
+  }
+ 
 }
