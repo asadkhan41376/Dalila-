@@ -13549,7 +13549,7 @@ input.text-center{
 }
 
 .col-center img{
-  width: 160px;
+  width: 210px;
 }
 
 .applyBtn.btn-success{
@@ -21627,6 +21627,11 @@ border-radius:20px 0 0 20px;
     margin-left: 5%;
     margin-top: 32%;
   }
+  
+  .explore-btn3{
+    margin-left: 40%;
+    margin-top: 18%;
+  }
 /* Desktop - Full HD (1920px and above) */
 @media (min-width: 1600px) {
   .explore-btn {
@@ -21637,6 +21642,11 @@ border-radius:20px 0 0 20px;
    .explore-btn2{
     margin-left: -10%;
     margin-top: 45%;
+  } 
+  
+  .explore-btn3{
+    margin-left: 40%;
+    margin-top: 25%;
   }
 }
 
