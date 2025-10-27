@@ -257,6 +257,7 @@ header {
   z-index: 1001;
   background: var(--bg-dark-1);
   margin: 0;
+
 }
 
 header.header-s1 {
@@ -309,10 +310,12 @@ header .info strong {
 
 header.header-bg {
   background: rgba(0, 0, 0, 0.5);
+  
 }
 
 header.transparent {
   background: none;
+  
 }
 
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
@@ -339,7 +342,7 @@ header.autoshow.scrollOn {
 }
 
 header.autoshow.scrollOff {
-  opacity: ;
+  /* opacity: ; */
   top: -120px;
 }
 
@@ -21668,4 +21671,9 @@ border-radius:20px 0 0 20px;
 
   }
  
+}
+
+
+.header_border{
+  border-bottom: 2px solid #C89E3A;
 }
