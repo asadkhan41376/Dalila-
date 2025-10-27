@@ -13553,7 +13553,7 @@ input.text-center{
 }
 
 .col-center img{
-  width: 300px;
+  width: 350px;
 }
 
 .applyBtn.btn-success{
@@ -21677,6 +21677,17 @@ border-radius:20px 0 0 20px;
 
 .header_border{
   border-bottom: 2px solid #C89E3A;
+}
+
+.header_btn{
+  border: 1px solid #C89E3A;
+  padding: 3px 20px;
+  color: white;
+}
+
+.header_btn:hover{
+ background-color:#C89E3A ;
+  color: white;
 }
 
 a.btn-main, a.btn-main:active, a.btn-main:focus, a.btn-main:visited, .btn-main, input[type=button].btn-main, a.btn-line, #mainmenu li ul.mega a.btn-main{
