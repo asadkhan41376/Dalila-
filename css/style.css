@@ -1030,7 +1030,7 @@ header.header-light #mainmenu a {
 }
 
 #mainmenu li:last-child>a {
-  border-bottom: none;
+  /* border-bottom: none; */
 }
 
 .dark-scheme #mainmenu li li a {
