@@ -959,8 +959,7 @@ header.header-s2 #mainmenu a{
 }
 
 header.smaller #mainmenu > li > a{
-  padding-top: 18px;
-  padding-bottom: 18px;
+    padding: 3px 10px;
 }
 
 #mainmenu p {
