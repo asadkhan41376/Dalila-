@@ -111,6 +111,62 @@
   color: #fff;
 }
 
+
+
+
+/* ====================== LBELS ====================== */
+
+
+label {
+  font-weight: 600;
+  margin-top: 5px;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  border-color: #e6b800;
+  box-shadow: 0 0 4px #e6b80066;
+}
+
+/* Upload box */
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #e6b800;
+}
+
+.upload-icon {
+  font-size: 32px;
+  color: #e6b800;
+  margin-bottom: 8px;
+}
+
+/* Date & Time side by side */
+.pickup-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pickup-field {
+  flex: 1;
+}
+
 /* ====================== INPUTS ====================== */
 .form-control {
   border: 1px solid #ddd;
@@ -126,7 +182,7 @@
 }
 
 /* ====================== BUTTONS ====================== */
-.btn-main {
+.form-container #form-btn-main {
   background: #d4a017;
   color: #fff;
   padding: 12px 40px;
@@ -137,7 +193,7 @@
   transition: 0.3s;
 }
 
-.btn-main:hover {
+.form-container #form-btn-main:hover {
   background: #b58900;
 }
 
@@ -227,3 +283,12 @@
 
 }
 }
+
+
+
+footer .btn-primary {
+height: 50px;
+  
+}
+
+
