@@ -21625,6 +21625,56 @@ border-radius:20px 0 0 20px;
 
 
 
+
+
+.right_image1 img {
+  width: 60%;
+  max-width: 100%;
+
+}
+
+.left_slide,
+.right_slide {
+  width: 700px;
+  height: auto;
+  position: absolute;
+  top: 10%;
+}
+
+.left_slide {
+  right: -15%;
+}
+
+.right_slide {
+  left: -15%;
+}
+
+
+
+
+/* 🔹 Responsive design */
+@media (max-width: 992px) {
+  .left_slide,
+  .right_slide {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .right_image1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .right_image1 img {
+    width: 100%;
+    
+  }
+}
+
+
 /* Default (Laptop size - around 1366px) */
 .explore-btn {
   position: absolute;
