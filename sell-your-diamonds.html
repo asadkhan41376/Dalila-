@@ -281,7 +281,7 @@
         </div>
       </section>
 
-<section class="estimate-section">
+<!-- <section class="estimate-section">
   <h2>Get a Free Estimate <span>(5 Quick Steps)</span></h2>
 
   <div class="steps">
@@ -330,7 +330,84 @@
       </ul>
     </div>
   </div>
-</section>
+</section> -->
+
+
+<section id="process" class="process-step bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 text-center theratio-align-center">
+                        <div class="ot-heading is-dots">
+                            <span>[ working steps ]</span>
+                            <h2 class="main-heading">Our Working Process</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="ot-process" data-tab="true">
+                            <ul class="process_nav unstyle">
+                                <li class="current">
+                                    <div class="icon-main">
+                                        <span class="dcell"><i class="ot-flaticon-tip"></i></span>
+                                        <span class="number-stroke">01</span>
+                                    </div>
+                                    <h5>Tell us about your diamond</h5>
+                                </li>
+                                <li>
+                                    <div class="icon-main">
+                                        <span class="dcell"><i class="ot-flaticon-money-back"></i></span>
+                                        <span class="number-stroke">02</span>
+                                    </div>
+                                    <h5>Upload diamond photos</h5>
+                                </li>
+                                <li>
+                                    <div class="icon-main">
+                                        <span class="dcell"><i class="ot-flaticon-3d-1"></i></span>
+                                        <span class="number-stroke">03</span>
+                                    </div>
+                                    <h5>Upload the certificate</h5>
+                                </li>
+                                <li>
+                                    <div class="icon-main">
+                                        <span class="dcell"><i class="ot-flaticon-paint-1"></i></span>
+                                        <span class="number-stroke">04</span>
+                                    </div>
+                                    <h5>Add any comments</h5>
+                                </li>
+
+                                <li>
+                                    <div class="icon-main">
+                                        <span class="dcell"><i class="ot-flaticon-paint-1"></i></span>
+                                        <span class="number-stroke">05</span>
+                                    </div>
+                                    <h5>Share your contact details</h5>
+                                </li>
+                            </ul>
+                            <div class="process-des">
+                                <div class="process-des-item">Shape, carat weight, color, clarity, cut/make (polish & symmetry), fluorescence.
+	•	Measurements and setting (if mounted)</div>
+                                <div class="process-des-item">(top & side on a plain background, good daylight).
+
+                                </div>
+                                <div class="process-des-item">(GIA/IGI/HRD) or share the report number.
+                                </div>
+                                <div class="process-des-item">(chips, repolish, laser inscription, asking price, timeline).
+                                </div>
+
+                                <div class="process-des-item">(name, email, phone, city/country).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center pt-5">
+                        <div class="ot-button">
+                            <a href="about-us.html" class="octf-btn octf-btn-light border-hover-light">view more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
       <div class="login-container">
@@ -506,6 +583,22 @@
   <script src="js/swiper.js"></script>
   <script src="js/custom-marquee.js"></script>
   <script src="js/custom-swiper-2.js"></script>
+  <script>
+     $('.ot-process[data-tab]').each(function(){
+        var selector = $(this);
+        selector.find('.process_nav li').first().addClass('current');
+        selector.find('.process-des div.process-des-item').hide();
+        selector.find('.process-des div.process-des-item').first().show();
+        selector.find('.process_nav li').on( 'click', function(){
+            $(this).parent().find('li').removeClass('current');
+            $(this).addClass('current');
+            $(this).parents('.ot-process').find('.process-des div.process-des-item').hide();
+
+            var index = $(this).index();
+            $(this).parents('.ot-process').find('.process-des div.process-des-item:eq(' + index + ')').fadeIn(300);
+        });
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 
