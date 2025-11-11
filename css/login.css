@@ -209,7 +209,7 @@ label {
 
 .terms-row label,
 .remember-row label {
-  color: #555;
+  color:white;
 }
 
 .terms-row a,
@@ -233,6 +233,7 @@ label {
   text-align: center;
   margin-top: 15px;
   font-size: 14px;
+  color: white;
 }
 
 /* ====================== BACK HOME BUTTON ====================== */
