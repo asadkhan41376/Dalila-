@@ -21734,7 +21734,7 @@ border-radius:20px 0 0 20px;
 
 
 .header_border{
-  border-bottom: 2px solid #C89E3A;
+  border-bottom: 3px solid #C89E3A;
 }
 
 .header_btn{
@@ -22164,4 +22164,12 @@ a.btn-main, a.btn-main:active, a.btn-main:focus, a.btn-main:visited, .btn-main, 
   .order-even-top-40 .ot-process:not([data-tab]) .process_nav li:nth-child(even) {
     margin-top: 0;
   }
+}
+
+#topbar{
+  margin-top: -15px;
+}
+
+header {
+  border-bottom: 3px solid #C89E3A;
 }
